@@ -38,7 +38,8 @@ document.getElementById("reverse").addEventListener("click", function() {
         document.getElementById("resultText").textContent = "C";
         document.getElementById("crk").value = caraFahrenheit;
     }
-    doConvert();
+    document.getElementById("input").value = "";
+    document.getElementById("result").value = "";
 });
 document.getElementById("input").addEventListener("input", doConvert);
 document.getElementById("reset").addEventListener("click", function() {
